@@ -3,7 +3,7 @@ import Unity, {UnityContext} from 'react-unity-webgl';
 export const Home = () => {
 
     const unityContext = new UnityContext({
-        loaderUrl: '/roleta/build.loader.js',
+        loaderUrl: '/roleta/BuildTestLink.loader.js',
         dataUrl: '/roleta/webgl.data',
         frameworkUrl: '/roleta/build.framework.js',
         codeUrl: '/roleta/build.wasm',
