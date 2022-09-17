@@ -3,15 +3,15 @@ import Unity, {UnityContext} from 'react-unity-webgl';
 export const Home = () => {
 
     const unityContext = new UnityContext({
-        loaderUrl: '/roleta/roleta.loader.js',
-        dataUrl: '/roleta/roleta.data',
-        frameworkUrl: '/roleta/roleta.framework.js',
-        codeUrl: '/roleta/roleta.wasm',
+        loaderUrl: '/roleta/build.loader.js',
+        dataUrl: '/roleta/webgl.data',
+        frameworkUrl: '/roleta/build.framework.js',
+        codeUrl: '/roleta/build.wasm',
       });
 
     return(
         <div>
-            <Unity  unityContext={unityContext} style={{width: "50%", height: "100%", justifySelf: "center", alignSelf: "center"}} />
+            <Unity  unityContext={unityContext} style={{width: "390px", height: "844px", justifySelf: "center", alignSelf: "center"}} />
         </div>
     )
 }
